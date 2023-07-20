@@ -81,6 +81,7 @@ public class GamePlay extends View {
         //Fill the background with the image
         Drawable backgroundDrawable=getResources().getDrawable(R.drawable.background,null);
         backgroundDrawable.setBounds(0,0,getWidth(),baseLineY);
+        backgroundDrawable.draw(canvas);
         //Fill the bottom part with the selected color
         Paint paintBottom=new Paint();
         paintBottom.setColor(Color.parseColor("#fbc5ce"));
@@ -110,14 +111,14 @@ public class GamePlay extends View {
 
             if(obstacles.indexOf(obstacleRect)%2==0){
                 Drawable smallObstacleDrawable=getResources().getDrawable(R.drawable.bricks,null);
-                smallObstacleDrawable.setBounds((int) obstacleRect.left,(int)obstacleRect.top,(int)obstacleRect.right,(int)obstacleRect.bottom);
+                smallObstacleDrawable.setBounds((int) obstacleRect.left,(int)obstacleRect.top,(int)obstacleRect.right,(int)baseLineY);
                 smallObstacleDrawable.draw(canvas);
             }
             else{
                 float top=obstacleRect.top-50;
                 RectF tallObstacleRect=new RectF(obstacleRect.left,top,obstacleRect.right,obstacleRect.bottom);
                 Drawable tallObstacleDrawable=getResources().getDrawable(R.drawable.bricks,null);
-                tallObstacleDrawable.setBounds((int) tallObstacleRect.left,(int) tallObstacleRect.top,(int) tallObstacleRect.right,(int) tallObstacleRect.bottom);
+                tallObstacleDrawable.setBounds((int) tallObstacleRect.left,(int) tallObstacleRect.top,(int) tallObstacleRect.right,(int) baseLineY);
                 tallObstacleDrawable.draw(canvas);
             }
             if(RectF.intersects(obstacleRect,getCircleRect())){
