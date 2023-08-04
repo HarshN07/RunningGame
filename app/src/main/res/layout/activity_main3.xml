@@ -7,4 +7,20 @@
     android:background="@color/pink"
     tools:context=".MainActivity3">
 
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="139dp"
+        android:layout_height="125dp"
+        app:srcCompat="@drawable/runner"
+        tools:layout_editor_absoluteX="296dp"
+        tools:layout_editor_absoluteY="71dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="280dp"
+        android:layout_height="52dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="234dp"
+        tools:layout_editor_absoluteY="225dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

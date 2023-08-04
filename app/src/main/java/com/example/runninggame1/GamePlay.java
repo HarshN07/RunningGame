@@ -22,7 +22,7 @@ public class GamePlay extends View {
     private static int runnerRadius=50;
     private static int obstacleWidth=100,obstacle1Height=80,obstacle2Height=200;
     private static int obstacleSpeed=10;
-    private static int maxObstacles=2;
+    private static int maxObstacles=1;
     private static int jumpVelocity=-50;
     private static int maxObstacleSpeed=35;
     private Paint paintRunner;
