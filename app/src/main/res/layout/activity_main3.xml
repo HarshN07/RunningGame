@@ -12,15 +12,16 @@
         android:id="@+id/imageView"
         android:layout_width="139dp"
         android:layout_height="125dp"
-        app:srcCompat="@drawable/runner"
-        tools:layout_editor_absoluteX="296dp"
-        tools:layout_editor_absoluteY="71dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/runner" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="280dp"
         android:layout_height="52dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="225dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,16 +7,16 @@ import android.os.Bundle;
 
 public class MainActivity3 extends Application {
     private static final String url = null;
-    private static Retrofit retrofit;
+    //private static Retrofit retrofit;
 
-    public static Retrofit getRetrofitInstance(){
-        if (retrofit == null){
-            retrofit = new Retrofit.Builder()
-                .baseURL(url);
-                .addConvertorFactory(GsonConvertorFactory.create())
-                    .build();
-        }
-        return retrofit;
-    }
+    //public static Retrofit getRetrofitInstance(){
+      //  if (retrofit == null){
+        //    retrofit = new Retrofit.Builder()
+          //      .baseURL(url);
+            //    .addConvertorFactory(GsonConvertorFactory.create())
+               //     .build();
+
+        //return retrofit;
+
     
 }
