@@ -17,7 +17,7 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        //using handler to have this page for 2s
+        //using handler to have this page for 5s
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
