@@ -51,6 +51,7 @@ public class GamePlay extends View {
 
         obstacles = new ArrayList<>();
         startTime=System.currentTimeMillis();
+
     }
 
     @Override
@@ -139,7 +140,7 @@ public class GamePlay extends View {
             }
         }
         if(gameOver){
-            return;
+            GAME_OVER(canvas);
         }
         //To remove the objects that have gone out of screen
         for (int i=obstacles.size()-1;i>=0;i--){
