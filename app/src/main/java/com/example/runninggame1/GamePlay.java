@@ -229,7 +229,7 @@ public class GamePlay extends View {
             isJumping=true;
             canJump=false;
             jumpCount++;
-            if (jumpCount > 1) {
+            if (jumpCount >= 1) {
                 jumpCount = 0;
                 Handler handler=new Handler();
                 handler.postDelayed(new Runnable() {
