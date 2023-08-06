@@ -51,7 +51,6 @@ public class GamePlay extends View {
 
         obstacles = new ArrayList<>();
         startTime=System.currentTimeMillis();
-
     }
 
     @Override
@@ -227,7 +226,6 @@ public class GamePlay extends View {
     private void jump1(){
         if(!isJumping1){
             velocityY1=jumpVelocity;
-            ScheduledExecutorService executorService = null;
             isJumping=true;
             canJump=false;
             jumpCount++;
